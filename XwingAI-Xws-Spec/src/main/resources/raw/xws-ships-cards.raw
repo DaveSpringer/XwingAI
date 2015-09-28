@@ -1,0 +1,409 @@
+{
+    ships: {
+      "X-Wing": {
+        name: "X-Wing",
+        factions: ["Rebel Alliance"],
+        attack: 3,
+        agility: 2,
+        hull: 3,
+        shields: 2,
+        actions: ["Focus", "Target Lock"],
+        maneuvers: [[0, 0, 0, 0, 0, 0], [0, 2, 2, 2, 0, 0], [1, 1, 2, 1, 1, 0], [1, 1, 1, 1, 1, 0], [0, 0, 1, 0, 0, 3]]
+      },
+      "Y-Wing": {
+        name: "Y-Wing",
+        factions: ["Rebel Alliance", "Scum and Villainy"],
+        attack: 2,
+        agility: 1,
+        hull: 5,
+        shields: 3,
+        actions: ["Focus", "Target Lock"],
+        maneuvers: [[0, 0, 0, 0, 0, 0], [0, 1, 2, 1, 0, 0], [1, 1, 2, 1, 1, 0], [3, 1, 1, 1, 3, 0], [0, 0, 3, 0, 0, 3]]
+      },
+      "A-Wing": {
+        name: "A-Wing",
+        factions: ["Rebel Alliance"],
+        attack: 2,
+        agility: 3,
+        hull: 2,
+        shields: 2,
+        actions: ["Focus", "Target Lock", "Boost", "Evade"],
+        maneuvers: [[0, 0, 0, 0, 0, 0], [1, 0, 0, 0, 1, 0], [2, 2, 2, 2, 2, 0], [1, 1, 2, 1, 1, 3], [0, 0, 2, 0, 0, 0], [0, 0, 2, 0, 0, 3]]
+      },
+      "YT-1300": {
+        name: "YT-1300",
+        factions: ["Rebel Alliance"],
+        attack: 2,
+        agility: 1,
+        hull: 6,
+        shields: 4,
+        actions: ["Focus", "Target Lock"],
+        maneuvers: [[0, 0, 0, 0, 0, 0], [1, 2, 2, 2, 1, 0], [1, 1, 2, 1, 1, 0], [0, 1, 1, 1, 0, 3], [0, 0, 1, 0, 0, 3]],
+        large: true
+      },
+      "TIE Fighter": {
+        name: "TIE Fighter",
+        factions: ["Galactic Empire"],
+        attack: 2,
+        agility: 3,
+        hull: 3,
+        shields: 0,
+        actions: ["Focus", "Barrel Roll", "Evade"],
+        maneuvers: [[0, 0, 0, 0, 0, 0], [1, 0, 0, 0, 1, 0], [1, 2, 2, 2, 1, 0], [1, 1, 2, 1, 1, 3], [0, 0, 1, 0, 0, 3], [0, 0, 1, 0, 0, 0]]
+      },
+      "TIE Advanced": {
+        name: "TIE Advanced",
+        factions: ["Galactic Empire"],
+        attack: 2,
+        agility: 3,
+        hull: 3,
+        shields: 2,
+        actions: ["Focus", "Target Lock", "Barrel Roll", "Evade"],
+        maneuvers: [[0, 0, 0, 0, 0, 0], [0, 2, 0, 2, 0, 0], [1, 1, 2, 1, 1, 0], [1, 1, 2, 1, 1, 0], [0, 0, 1, 0, 0, 3], [0, 0, 1, 0, 0, 0]]
+      },
+      "TIE Interceptor": {
+        name: "TIE Interceptor",
+        factions: ["Galactic Empire"],
+        attack: 3,
+        agility: 3,
+        hull: 3,
+        shields: 0,
+        actions: ["Focus", "Barrel Roll", "Boost", "Evade"],
+        maneuvers: [[0, 0, 0, 0, 0, 0], [1, 0, 0, 0, 1, 0], [2, 2, 2, 2, 2, 0], [1, 1, 2, 1, 1, 3], [0, 0, 2, 0, 0, 0], [0, 0, 1, 0, 0, 3]]
+      },
+      "Firespray-31": {
+        name: "Firespray-31",
+        factions: ["Galactic Empire", "Scum and Villainy"],
+        attack: 3,
+        agility: 2,
+        hull: 6,
+        shields: 4,
+        actions: ["Focus", "Target Lock", "Evade"],
+        maneuvers: [[0, 0, 0, 0, 0, 0], [0, 2, 2, 2, 0, 0], [1, 1, 2, 1, 1, 0], [1, 1, 1, 1, 1, 3], [0, 0, 1, 0, 0, 3]],
+        large: true
+      },
+      "HWK-290": {
+        name: "HWK-290",
+        factions: ["Rebel Alliance", "Scum and Villainy"],
+        attack: 1,
+        agility: 2,
+        hull: 4,
+        shields: 1,
+        actions: ["Focus", "Target Lock"],
+        maneuvers: [[0, 0, 0, 0, 0], [0, 2, 2, 2, 0], [1, 1, 2, 1, 1], [0, 3, 1, 3, 0], [0, 0, 3, 0, 0]]
+      },
+      "Lambda-Class Shuttle": {
+        name: "Lambda-Class Shuttle",
+        factions: ["Galactic Empire"],
+        attack: 3,
+        agility: 1,
+        hull: 5,
+        shields: 5,
+        actions: ["Focus", "Target Lock"],
+        maneuvers: [[0, 0, 3, 0, 0], [0, 2, 2, 2, 0], [3, 1, 2, 1, 3], [0, 3, 1, 3, 0]],
+        large: true
+      },
+      "B-Wing": {
+        name: "B-Wing",
+        factions: ["Rebel Alliance"],
+        attack: 3,
+        agility: 1,
+        hull: 3,
+        shields: 5,
+        actions: ["Focus", "Target Lock", "Barrel Roll"],
+        maneuvers: [[0, 0, 0, 0, 0, 0], [3, 2, 2, 2, 3, 0], [1, 1, 2, 1, 1, 3], [0, 3, 1, 3, 0, 0], [0, 0, 3, 0, 0, 0]]
+      },
+      "TIE Bomber": {
+        name: "TIE Bomber",
+        factions: ["Galactic Empire"],
+        attack: 2,
+        agility: 2,
+        hull: 6,
+        shields: 0,
+        actions: ["Focus", "Target Lock", "Barrel Roll"],
+        maneuvers: [[0, 0, 0, 0, 0, 0], [0, 1, 2, 1, 0, 0], [3, 2, 2, 2, 3, 0], [1, 1, 2, 1, 1, 0], [0, 0, 1, 0, 0, 0], [0, 0, 0, 0, 0, 3]]
+      },
+      "GR-75 Medium Transport": {
+        name: "GR-75 Medium Transport",
+        factions: ["Rebel Alliance"],
+        energy: 4,
+        agility: 0,
+        hull: 8,
+        shields: 4,
+        actions: ["Recover", "Reinforce", "Coordinate", "Jam"],
+        huge: true,
+        epic_points: 2,
+        maneuvers: [[0, 0, 0, 0, 0, 0], [0, 1, 1, 1, 0, 0], [0, 1, 1, 1, 0, 0], [0, 0, 1, 0, 0, 0], [0, 0, 1, 0, 0, 0]]
+      },
+      "Z-95 Headhunter": {
+        name: "Z-95 Headhunter",
+        factions: ["Rebel Alliance", "Scum and Villainy"],
+        attack: 2,
+        agility: 2,
+        hull: 2,
+        shields: 2,
+        actions: ["Focus", "Target Lock"],
+        maneuvers: [[0, 0, 0, 0, 0, 0], [0, 1, 2, 1, 0, 0], [1, 2, 2, 2, 1, 0], [1, 1, 1, 1, 1, 3], [0, 0, 1, 0, 0, 0]]
+      },
+      "TIE Defender": {
+        name: "TIE Defender",
+        factions: ["Galactic Empire"],
+        attack: 3,
+        agility: 3,
+        hull: 3,
+        shields: 3,
+        actions: ["Focus", "Target Lock", "Barrel Roll"],
+        maneuvers: [[0, 0, 0, 0, 0, 0], [3, 1, 0, 1, 3, 0], [3, 1, 2, 1, 3, 0], [1, 1, 2, 1, 1, 0], [0, 0, 2, 0, 0, 1], [0, 0, 2, 0, 0, 0]]
+      },
+      "E-Wing": {
+        name: "E-Wing",
+        factions: ["Rebel Alliance"],
+        attack: 3,
+        agility: 3,
+        hull: 2,
+        shields: 3,
+        actions: ["Focus", "Target Lock", "Barrel Roll", "Evade"],
+        maneuvers: [[0, 0, 0, 0, 0, 0], [0, 1, 2, 1, 0, 0], [1, 2, 2, 2, 1, 0], [1, 1, 2, 1, 1, 3], [0, 0, 1, 0, 0, 3], [0, 0, 1, 0, 0, 0]]
+      },
+      "TIE Phantom": {
+        name: "TIE Phantom",
+        factions: ["Galactic Empire"],
+        attack: 4,
+        agility: 2,
+        hull: 2,
+        shields: 2,
+        actions: ["Focus", "Barrel Roll", "Evade", "Cloak"],
+        maneuvers: [[0, 0, 0, 0, 0, 0], [1, 0, 0, 0, 1, 0], [1, 2, 2, 2, 1, 0], [1, 1, 2, 1, 1, 3], [0, 0, 1, 0, 0, 3]]
+      },
+      "CR90 Corvette (Fore)": {
+        name: "CR90 Corvette (Fore)",
+        factions: ["Rebel Alliance"],
+        attack: 4,
+        agility: 0,
+        hull: 8,
+        shields: 5,
+        actions: ["Coordinate", "Target Lock"],
+        huge: true,
+        epic_points: 1.5,
+        maneuvers: [[0, 0, 0, 0, 0, 0], [0, 1, 0, 1, 0, 0], [0, 1, 1, 1, 0, 0], [0, 0, 1, 0, 0, 0], [0, 0, 1, 0, 0, 0]],
+        multisection: ["CR90 Corvette (Aft)".canonicalize()],
+        canonical_name: "CR90 Corvette".canonicalize()
+      },
+      "CR90 Corvette (Aft)": {
+        name: "CR90 Corvette (Aft)",
+        factions: ["Rebel Alliance"],
+        energy: 5,
+        agility: 0,
+        hull: 8,
+        shields: 3,
+        actions: ["Reinforce", "Recover"],
+        huge: true,
+        epic_points: 1.5,
+        maneuvers: [[0, 0, 0, 0, 0, 0], [0, 1, 0, 1, 0, 0], [0, 1, 1, 1, 0, 0], [0, 0, 1, 0, 0, 0], [0, 0, 1, 0, 0, 0]],
+        multisection: ["CR90 Corvette (Fore)".canonicalize()],
+        canonical_name: "CR90 Corvette".canonicalize()
+      },
+      "YT-2400": {
+        name: "YT-2400",
+        canonical_name: "YT-2400 Freighter".canonicalize(),
+        factions: ["Rebel Alliance"],
+        attack: 2,
+        agility: 2,
+        hull: 5,
+        shields: 5,
+        actions: ["Focus", "Target Lock", "Barrel Roll"],
+        large: true,
+        maneuvers: [[0, 0, 0, 0, 0, 0], [1, 2, 2, 2, 1, 0], [1, 1, 2, 1, 1, 0], [1, 1, 1, 1, 1, 0], [0, 0, 1, 0, 0, 3]]
+      },
+      "VT-49 Decimator": {
+        name: "VT-49 Decimator",
+        factions: ["Galactic Empire"],
+        attack: 3,
+        agility: 0,
+        hull: 12,
+        shields: 4,
+        actions: ["Focus", "Target Lock"],
+        large: true,
+        maneuvers: [[0, 0, 0, 0, 0, 0], [0, 1, 1, 1, 0, 0], [1, 2, 2, 2, 1, 0], [1, 1, 2, 1, 1, 0], [0, 0, 1, 0, 0, 0]]
+      },
+      "StarViper": {
+        name: "StarViper",
+        factions: ["Scum and Villainy"],
+        attack: 3,
+        agility: 3,
+        hull: 4,
+        shields: 1,
+        actions: ["Focus", "Target Lock", "Barrel Roll", "Boost"],
+        maneuvers: [[0, 0, 0, 0, 0, 0, 0, 0], [1, 2, 2, 2, 1, 0, 0, 0], [1, 1, 2, 1, 1, 0, 0, 0], [0, 1, 2, 1, 0, 0, 3, 3], [0, 0, 1, 0, 0, 0, 0, 0]]
+      },
+      "M3-A Interceptor": {
+        name: "M3-A Interceptor",
+        factions: ["Scum and Villainy"],
+        attack: 2,
+        agility: 3,
+        hull: 2,
+        shields: 1,
+        actions: ["Focus", "Target Lock", "Barrel Roll", "Evade"],
+        maneuvers: [[0, 0, 0, 0, 0, 0], [1, 2, 0, 2, 1, 0], [1, 2, 2, 2, 1, 0], [0, 1, 2, 1, 0, 3], [0, 0, 1, 0, 0, 0], [0, 0, 0, 0, 0, 3]]
+      },
+      "Aggressor": {
+        name: "Aggressor",
+        factions: ["Scum and Villainy"],
+        attack: 3,
+        agility: 3,
+        hull: 4,
+        shields: 4,
+        actions: ["Focus", "Target Lock", "Boost", "Evade"],
+        large: true,
+        maneuvers: [[0, 0, 0, 0, 0, 0, 0, 0], [1, 2, 2, 2, 1, 0, 0, 0], [1, 2, 2, 2, 1, 0, 0, 0], [0, 2, 2, 2, 0, 0, 3, 3], [0, 0, 0, 0, 0, 3, 0, 0]]
+      },
+      "Raider-class Corvette (Fore)": {
+        name: "Raider-class Corvette (Fore)",
+        factions: ["Galactic Empire"],
+        attack: 4,
+        agility: 0,
+        hull: 8,
+        shields: 6,
+        actions: ["Recover", "Reinforce"],
+        huge: true,
+        epic_points: 1.5,
+        maneuvers: [[0, 0, 0, 0, 0, 0], [0, 1, 1, 1, 0, 0], [0, 1, 1, 1, 0, 0], [0, 0, 1, 0, 0, 0], [0, 0, 1, 0, 0, 0]]
+      },
+      "Raider-class Corvette (Aft)": {
+        name: "Raider-class Corvette (Aft)",
+        factions: ["Galactic Empire"],
+        energy: 6,
+        agility: 0,
+        hull: 8,
+        shields: 4,
+        actions: ["Coordinate", "Target Lock"],
+        huge: true,
+        epic_points: 1.5,
+        maneuvers: [[0, 0, 0, 0, 0, 0], [0, 1, 1, 1, 0, 0], [0, 1, 1, 1, 0, 0], [0, 0, 1, 0, 0, 0], [0, 0, 1, 0, 0, 0]]
+      },
+      "YV-666": {
+        name: "YV-666",
+        factions: ["Scum and Villainy"],
+        attack: 3,
+        agility: 1,
+        hull: 6,
+        shields: 6,
+        large: true,
+        actions: ["Focus", "Target Lock"],
+        maneuvers: [[0, 0, 3, 0, 0, 0], [0, 2, 2, 2, 0, 0], [3, 1, 2, 1, 3, 0], [1, 1, 2, 1, 1, 0], [0, 0, 1, 0, 0, 0]]
+      },
+      "Kihraxz Fighter": {
+        name: "Kihraxz Fighter",
+        factions: ["Scum and Villainy"],
+        attack: 3,
+        agility: 2,
+        hull: 4,
+        shields: 1,
+        actions: ["Focus", "Target Lock"],
+        maneuvers: [[0, 0, 0, 0, 0, 0], [1, 2, 0, 2, 1, 0], [1, 2, 2, 2, 1, 0], [0, 1, 1, 1, 0, 0], [0, 0, 1, 0, 0, 3], [0, 0, 0, 0, 0, 3]]
+      },
+      "K-Wing": {
+        name: "K-Wing",
+        factions: ["Rebel Alliance"],
+        attack: 2,
+        agility: 1,
+        hull: 5,
+        shields: 4,
+        actions: ["Focus", "Target Lock", "SLAM"],
+        maneuvers: [[0, 0, 0, 0, 0, 0], [0, 2, 2, 2, 0, 0], [1, 1, 2, 1, 1, 0], [0, 1, 1, 1, 0, 0]]
+      },
+      "TIE Punisher": {
+        name: "TIE Punisher",
+        factions: ["Galactic Empire"],
+        attack: 2,
+        agility: 1,
+        hull: 6,
+        shields: 3,
+        actions: ["Focus", "Target Lock", "Boost"],
+        maneuvers: [[0, 0, 0, 0, 0, 0], [0, 2, 2, 2, 0, 0], [3, 1, 2, 1, 3, 0], [1, 1, 1, 1, 1, 0], [0, 0, 0, 0, 0, 3]]
+      },
+      "Gozanti-class Cruiser": {
+        name: "Gozanti-class Cruiser",
+        factions: ["Galactic Empire"],
+        energy: 4,
+        agility: 0,
+        hull: 9,
+        shields: 5,
+        huge: true,
+        epic_points: 2,
+        actions: ["Recover", "Reinforce", "Coordinate", "Target Lock"]
+      },
+      "VCX-100": {
+        name: "VCX-100",
+        factions: ["Rebel Alliance"],
+        attack: 4,
+        agility: 0,
+        hull: 10,
+        shields: 6,
+        large: true,
+        actions: ["Focus", "Target Lock", "Evade"],
+        maneuvers: []
+      },
+      "Attack Shuttle": {
+        name: "Attack Shuttle",
+        factions: ["Rebel Alliance"],
+        attack: 3,
+        agility: 2,
+        hull: 2,
+        shields: 2,
+        actions: ["Focus", "Barrel Roll", "Evade"],
+        maneuvers: []
+      },
+      "TIE Advanced Prototype": {
+        name: "TIE Advanced Prototype",
+        factions: ["Galactic Empire"],
+        attack: 2,
+        agility: 3,
+        hull: 2,
+        shields: 2,
+        actions: ["Focus", "Target Lock", "Barrel Roll", "Boost"],
+        maneuvers: []
+      },
+      "G-1A Starfighter": {
+        name: "G-1A Starfighter",
+        factions: ["Scum and Villainy"],
+        attack: 3,
+        agility: 1,
+        hull: 4,
+        shields: 4,
+        actions: ["Focus", "Target Lock", "Evade"],
+        maneuvers: []
+      },
+      "JumpMaster 5000": {
+        name: "JumpMaster 5000",
+        factions: ["Scum and Villainy"],
+        large: true,
+        attack: 2,
+        agility: 2,
+        hull: 5,
+        shields: 4,
+        actions: ["Focus", "Target Lock", "Barrel Roll"],
+        maneuvers: []
+      },
+      "T-70 X-Wing": {
+        name: "T-70 X-Wing",
+        factions: ["Resistance"],
+        attack: 3,
+        agility: 2,
+        hull: 3,
+        shields: 3,
+        actions: ["Focus", "Target Lock", "Boost"],
+        maneuvers: [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 2, 2, 2, 0, 0, 0, 0, 0, 0], [1, 1, 2, 1, 1, 0, 0, 0, 0, 0], [1, 1, 2, 1, 1, 0, 0, 0, 3, 3], [0, 0, 1, 0, 0, 3, 0, 0, 0, 0]]
+      },
+      "TIE/fo Fighter": {
+        name: "TIE/fo Fighter",
+        factions: ["First Order"],
+        attack: 2,
+        agility: 3,
+        hull: 3,
+        shields: 1,
+        actions: ["Focus", "Target Lock", "Barrel Roll", "Evade"],
+        maneuvers: [[0, 0, 0, 0, 0, 0, 0, 0], [1, 0, 0, 0, 1, 0, 0, 0], [2, 2, 2, 2, 2, 0, 3, 3], [1, 1, 2, 1, 1, 0, 0, 0], [0, 0, 1, 0, 0, 3, 0, 0], [0, 0, 1, 0, 0, 0, 0, 0]]
+      }
+    }
+  }
