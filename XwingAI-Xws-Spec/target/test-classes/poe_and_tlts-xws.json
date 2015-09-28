@@ -1,0 +1,58 @@
+{
+  "version": "0.3.0",
+  "name": "Poe And TLTs",
+  "faction": "rebel",
+  "points": 100,
+  "pilots": [
+    {
+      "name": "poedameron",
+      "ship": "t70xwing",
+      "points": 39,
+      "upgrades": {
+        "amd": [
+          "r5p9"
+        ],
+        "ept": [
+          "predator"
+        ],
+        "mod": [
+          "autothrusters"
+        ]
+      }
+    },
+    {
+      "name": "mirandadoni",
+      "ship": "kwing",
+      "points": 35,
+      "upgrades": {
+        "turret": [
+          "twinlaserturret"
+        ]
+      }
+    },
+    {
+      "name": "goldsquadronpilot",
+      "ship": "ywing",
+      "points": 26,
+      "upgrades": {
+        "title": [
+          "btla4ywing"
+        ],
+        "amd": [
+          "r3a2"
+        ],
+        "turret": [
+          "twinlaserturret"
+        ]
+      }
+    }
+  ],
+  "vendor": {
+    "voidstate": {
+      "squadron_id": 326198,
+      "link": "http://xwing-builder.co.uk/view/326198/poe-and-tlts",
+      "builder": "Voidstate's Unofficial X-Wing Squadron Builder",
+      "builder_link": "http://xwing-builder.co.uk/build"
+    }
+  }
+}

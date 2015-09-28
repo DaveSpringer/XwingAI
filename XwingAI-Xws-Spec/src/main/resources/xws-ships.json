@@ -1,0 +1,1594 @@
+{
+  "ships": [
+    {
+      "id": 6,
+      "name": "A-Wing",
+      "canonical": "awing",
+      "faction": "rebels",
+      "released": true,
+      "sort_weight": true,
+      "dial": [
+        [
+          "x",
+          "x",
+          "g",
+          "x",
+          "x",
+          "r"
+        ],
+        [
+          "x",
+          "x",
+          "g",
+          "x",
+          "x",
+          "x"
+        ],
+        [
+          "w",
+          "w",
+          "g",
+          "w",
+          "w",
+          "r"
+        ],
+        [
+          "g",
+          "g",
+          "g",
+          "g",
+          "g",
+          "x"
+        ],
+        [
+          "w",
+          "x",
+          "x",
+          "x",
+          "w",
+          "x"
+        ]
+      ],
+      "dial_has_zero": false,
+      "tie": false,
+      "xwing": false,
+      "large": false,
+      "huge": false,
+      "sections": true
+    },
+    {
+      "id": 23,
+      "name": "Aggressor",
+      "canonical": "aggressor",
+      "faction": "scum",
+      "released": true,
+      "sort_weight": false,
+      "dial": [
+        [
+          "x",
+          "x",
+          "x",
+          "x",
+          "x",
+          "r"
+        ],
+        [
+          "x",
+          "g",
+          "g",
+          "g",
+          "x",
+          "x",
+          "r",
+          "r"
+        ],
+        [
+          "w",
+          "g",
+          "g",
+          "g",
+          "w",
+          "x"
+        ],
+        [
+          "w",
+          "g",
+          "g",
+          "g",
+          "w",
+          "x"
+        ]
+      ],
+      "dial_has_zero": false,
+      "tie": false,
+      "xwing": false,
+      "large": true,
+      "huge": false,
+      "sections": true
+    },
+    {
+      "id": 9,
+      "name": "B-Wing",
+      "canonical": "bwing",
+      "faction": "rebels",
+      "released": true,
+      "sort_weight": false,
+      "dial": [
+        [
+          "x",
+          "x",
+          "r",
+          "x",
+          "x",
+          "x"
+        ],
+        [
+          "x",
+          "r",
+          "w",
+          "r",
+          "x",
+          "x"
+        ],
+        [
+          "w",
+          "w",
+          "g",
+          "w",
+          "w",
+          "r"
+        ],
+        [
+          "r",
+          "g",
+          "g",
+          "g",
+          "r",
+          "x"
+        ]
+      ],
+      "dial_has_zero": false,
+      "tie": false,
+      "xwing": false,
+      "large": false,
+      "huge": false,
+      "sections": true
+    },
+    {
+      "id": 18,
+      "name": "CR90 Corvette",
+      "canonical": "cr90corvette",
+      "faction": "rebels",
+      "released": true,
+      "sort_weight": false,
+      "dial": [
+        [
+          "x",
+          "x",
+          "w1",
+          "x",
+          "x",
+          "x"
+        ],
+        [
+          "x",
+          "x",
+          "w2",
+          "x",
+          "x",
+          "x"
+        ],
+        [
+          "x",
+          "w2",
+          "w3",
+          "w2",
+          "x",
+          "x"
+        ],
+        [
+          "x",
+          "w3",
+          "x",
+          "w3",
+          "x",
+          "x"
+        ]
+      ],
+      "dial_has_zero": false,
+      "tie": false,
+      "xwing": false,
+      "large": false,
+      "huge": true,
+      "sections": false
+    },
+    {
+      "id": 14,
+      "name": "E-Wing",
+      "canonical": "ewing",
+      "faction": "rebels",
+      "released": true,
+      "sort_weight": false,
+      "dial": [
+        [
+          "x",
+          "x",
+          "w",
+          "x",
+          "x",
+          "x"
+        ],
+        [
+          "x",
+          "x",
+          "w",
+          "x",
+          "x",
+          "r"
+        ],
+        [
+          "w",
+          "w",
+          "g",
+          "w",
+          "w",
+          "r"
+        ],
+        [
+          "w",
+          "g",
+          "g",
+          "g",
+          "w",
+          "x"
+        ],
+        [
+          "x",
+          "w",
+          "g",
+          "w",
+          "x",
+          "x"
+        ]
+      ],
+      "dial_has_zero": false,
+      "tie": false,
+      "xwing": false,
+      "large": false,
+      "huge": false,
+      "sections": true
+    },
+    {
+      "id": 8,
+      "name": "Firespray-31",
+      "canonical": "firespray31",
+      "faction": "empire,scum",
+      "released": true,
+      "sort_weight": false,
+      "dial": [
+        [
+          "x",
+          "x",
+          "w",
+          "x",
+          "x",
+          "r"
+        ],
+        [
+          "w",
+          "w",
+          "w",
+          "w",
+          "w",
+          "r"
+        ],
+        [
+          "w",
+          "w",
+          "g",
+          "w",
+          "w",
+          "x"
+        ],
+        [
+          "x",
+          "g",
+          "g",
+          "g",
+          "x",
+          "x"
+        ]
+      ],
+      "dial_has_zero": false,
+      "tie": false,
+      "xwing": false,
+      "large": true,
+      "huge": false,
+      "sections": true
+    },
+    {
+      "id": 32,
+      "name": "G-1A Starfighter",
+      "canonical": "g1astarfighter",
+      "faction": "scum",
+      "released": false,
+      "sort_weight": false,
+      "dial": null,
+      "dial_has_zero": false,
+      "tie": null,
+      "xwing": false,
+      "large": false,
+      "huge": false,
+      "sections": true
+    },
+    {
+      "id": 29,
+      "name": "Gozanti-Class Cruiser",
+      "canonical": "gozanticlasscruiser",
+      "faction": "empire",
+      "released": false,
+      "sort_weight": false,
+      "dial": null,
+      "dial_has_zero": false,
+      "tie": null,
+      "xwing": false,
+      "large": false,
+      "huge": true,
+      "sections": true
+    },
+    {
+      "id": 17,
+      "name": "GR-75 Medium Transport",
+      "canonical": "gr75mediumtransport",
+      "faction": "rebels",
+      "released": true,
+      "sort_weight": false,
+      "dial": [
+        [
+          "x",
+          "x",
+          "w0",
+          "x",
+          "x",
+          "x"
+        ],
+        [
+          "x",
+          "x",
+          "w1",
+          "x",
+          "x",
+          "x"
+        ],
+        [
+          "x",
+          "w1",
+          "w2",
+          "w1",
+          "x",
+          "x"
+        ],
+        [
+          "x",
+          "w2",
+          "w3",
+          "w2",
+          "x",
+          "x"
+        ]
+      ],
+      "dial_has_zero": false,
+      "tie": false,
+      "xwing": false,
+      "large": false,
+      "huge": true,
+      "sections": true
+    },
+    {
+      "id": 12,
+      "name": "HWK-290",
+      "canonical": "hwk290",
+      "faction": "rebels,scum",
+      "released": true,
+      "sort_weight": false,
+      "dial": [
+        [
+          "x",
+          "x",
+          "r",
+          "x",
+          "x",
+          "x"
+        ],
+        [
+          "x",
+          "r",
+          "w",
+          "r",
+          "x",
+          "x"
+        ],
+        [
+          "w",
+          "w",
+          "g",
+          "w",
+          "w",
+          "x"
+        ],
+        [
+          "x",
+          "g",
+          "g",
+          "g",
+          "x",
+          "x"
+        ]
+      ],
+      "dial_has_zero": false,
+      "tie": false,
+      "xwing": false,
+      "large": false,
+      "huge": false,
+      "sections": true
+    },
+    {
+      "id": 31,
+      "name": "JumpMaster 5000",
+      "canonical": "jumpmaster5000",
+      "faction": "scum",
+      "released": false,
+      "sort_weight": false,
+      "dial": null,
+      "dial_has_zero": false,
+      "tie": null,
+      "xwing": false,
+      "large": true,
+      "huge": false,
+      "sections": true
+    },
+    {
+      "id": 25,
+      "name": "K-Wing",
+      "canonical": "kwing",
+      "faction": "rebels",
+      "released": true,
+      "sort_weight": false,
+      "dial": [
+        [
+          "x",
+          "w",
+          "w",
+          "w",
+          "x",
+          "x"
+        ],
+        [
+          "w",
+          "w",
+          "g",
+          "w",
+          "w",
+          "x"
+        ],
+        [
+          "x",
+          "g",
+          "g",
+          "g",
+          "x",
+          "x"
+        ]
+      ],
+      "dial_has_zero": false,
+      "tie": false,
+      "xwing": false,
+      "large": false,
+      "huge": false,
+      "sections": true
+    },
+    {
+      "id": 27,
+      "name": "Kihraxz",
+      "canonical": "kihraxzfighter",
+      "faction": "scum",
+      "released": true,
+      "sort_weight": false,
+      "dial": [
+        [
+          "x",
+          "x",
+          "x",
+          "x",
+          "x",
+          "r"
+        ],
+        [
+          "x",
+          "x",
+          "w",
+          "x",
+          "x",
+          "r"
+        ],
+        [
+          "x",
+          "w",
+          "w",
+          "w",
+          "x",
+          "x"
+        ],
+        [
+          "w",
+          "g",
+          "g",
+          "g",
+          "w",
+          "x"
+        ],
+        [
+          "w",
+          "g",
+          "x",
+          "g",
+          "w",
+          "x"
+        ]
+      ],
+      "dial_has_zero": false,
+      "tie": false,
+      "xwing": false,
+      "large": false,
+      "huge": false,
+      "sections": true
+    },
+    {
+      "id": 11,
+      "name": "Lambda-Class Shuttle",
+      "canonical": "lambdaclassshuttle",
+      "faction": "empire",
+      "released": true,
+      "sort_weight": false,
+      "dial": [
+        [
+          "x",
+          "r",
+          "w",
+          "r",
+          "x",
+          "x"
+        ],
+        [
+          "r",
+          "w",
+          "g",
+          "w",
+          "r",
+          "x"
+        ],
+        [
+          "x",
+          "g",
+          "g",
+          "g",
+          "x",
+          "x"
+        ],
+        [
+          "x",
+          "x",
+          "s",
+          "x",
+          "x",
+          "x"
+        ]
+      ],
+      "dial_has_zero": true,
+      "tie": false,
+      "xwing": false,
+      "large": true,
+      "huge": false,
+      "sections": true
+    },
+    {
+      "id": 22,
+      "name": "M3-A \u201cScyk\u201d Interceptor",
+      "canonical": "m3ainterceptor",
+      "faction": "scum",
+      "released": true,
+      "sort_weight": true,
+      "dial": [
+        [
+          "x",
+          "x",
+          "x",
+          "x",
+          "x",
+          "r"
+        ],
+        [
+          "x",
+          "x",
+          "w",
+          "x",
+          "x",
+          "x"
+        ],
+        [
+          "x",
+          "w",
+          "g",
+          "w",
+          "x",
+          "r"
+        ],
+        [
+          "w",
+          "g",
+          "g",
+          "g",
+          "w",
+          "x"
+        ],
+        [
+          "w",
+          "g",
+          "x",
+          "g",
+          "w",
+          "x"
+        ]
+      ],
+      "dial_has_zero": false,
+      "tie": false,
+      "xwing": false,
+      "large": false,
+      "huge": false,
+      "sections": true
+    },
+    {
+      "id": 24,
+      "name": "Raider-class Corvette",
+      "canonical": "raiderclasscorv",
+      "faction": "empire",
+      "released": true,
+      "sort_weight": false,
+      "dial": [
+        [
+          "x",
+          "x",
+          "w2",
+          "x",
+          "x",
+          "x"
+        ],
+        [
+          "x",
+          "x",
+          "w2",
+          "x",
+          "x",
+          "x"
+        ],
+        [
+          "x",
+          "w2",
+          "w3",
+          "w2",
+          "x",
+          "x"
+        ],
+        [
+          "x",
+          "w3",
+          "w3",
+          "w3",
+          "x",
+          "x"
+        ]
+      ],
+      "dial_has_zero": false,
+      "tie": false,
+      "xwing": false,
+      "large": false,
+      "huge": true,
+      "sections": false
+    },
+    {
+      "id": 21,
+      "name": "StarViper",
+      "canonical": "starviper",
+      "faction": "scum",
+      "released": true,
+      "sort_weight": false,
+      "dial": [
+        [
+          "x",
+          "x",
+          "w",
+          "x",
+          "x",
+          "x"
+        ],
+        [
+          "x",
+          "w",
+          "g",
+          "w",
+          "x",
+          "x",
+          "r",
+          "r"
+        ],
+        [
+          "w",
+          "w",
+          "g",
+          "w",
+          "w",
+          "x"
+        ],
+        [
+          "w",
+          "g",
+          "g",
+          "g",
+          "w",
+          "x"
+        ]
+      ],
+      "dial_has_zero": false,
+      "tie": false,
+      "xwing": false,
+      "large": false,
+      "huge": false,
+      "sections": true
+    },
+    {
+      "id": 33,
+      "name": "T-70 X-Wing",
+      "canonical": "t70xwing",
+      "faction": "rebels",
+      "released": true,
+      "sort_weight": false,
+      "dial": [
+        [
+          "x",
+          "x",
+          "w",
+          "x",
+          "x",
+          "r"
+        ],
+        [
+          "w",
+          "w",
+          "g",
+          "w",
+          "w",
+          "x",
+          "x",
+          "x",
+          "r",
+          "r"
+        ],
+        [
+          "w",
+          "w",
+          "g",
+          "w",
+          "w",
+          "x"
+        ],
+        [
+          "x",
+          "g",
+          "g",
+          "g",
+          "x",
+          "x"
+        ]
+      ],
+      "dial_has_zero": false,
+      "tie": null,
+      "xwing": true,
+      "large": false,
+      "huge": false,
+      "sections": true
+    },
+    {
+      "id": 2,
+      "name": "TIE Advanced",
+      "canonical": "tieadvanced",
+      "faction": "empire",
+      "released": true,
+      "sort_weight": false,
+      "dial": [
+        [
+          "x",
+          "x",
+          "w",
+          "x",
+          "x",
+          "x"
+        ],
+        [
+          "x",
+          "x",
+          "w",
+          "x",
+          "x",
+          "r"
+        ],
+        [
+          "w",
+          "w",
+          "g",
+          "w",
+          "w",
+          "x"
+        ],
+        [
+          "w",
+          "w",
+          "g",
+          "w",
+          "w",
+          "x"
+        ],
+        [
+          "x",
+          "g",
+          "x",
+          "g",
+          "x",
+          "x"
+        ]
+      ],
+      "dial_has_zero": false,
+      "tie": true,
+      "xwing": false,
+      "large": false,
+      "huge": false,
+      "sections": true
+    },
+    {
+      "id": 30,
+      "name": "TIE Advanced Prototype",
+      "canonical": "tieadvprototype",
+      "faction": "empire",
+      "released": false,
+      "sort_weight": false,
+      "dial": null,
+      "dial_has_zero": false,
+      "tie": true,
+      "xwing": false,
+      "large": false,
+      "huge": false,
+      "sections": true
+    },
+    {
+      "id": 10,
+      "name": "TIE Bomber",
+      "canonical": "tiebomber",
+      "faction": "empire",
+      "released": true,
+      "sort_weight": false,
+      "dial": [
+        [
+          "x",
+          "x",
+          "x",
+          "x",
+          "x",
+          "r"
+        ],
+        [
+          "x",
+          "x",
+          "w",
+          "x",
+          "x",
+          "x"
+        ],
+        [
+          "w",
+          "w",
+          "g",
+          "w",
+          "w",
+          "x"
+        ],
+        [
+          "r",
+          "g",
+          "g",
+          "g",
+          "r",
+          "x"
+        ],
+        [
+          "x",
+          "w",
+          "g",
+          "w",
+          "x",
+          "x"
+        ]
+      ],
+      "dial_has_zero": false,
+      "tie": true,
+      "xwing": false,
+      "large": false,
+      "huge": false,
+      "sections": true
+    },
+    {
+      "id": 15,
+      "name": "TIE Defender",
+      "canonical": "tiedefender",
+      "faction": "empire",
+      "released": true,
+      "sort_weight": false,
+      "dial": [
+        [
+          "x",
+          "x",
+          "g",
+          "x",
+          "x",
+          "x"
+        ],
+        [
+          "x",
+          "x",
+          "g",
+          "x",
+          "x",
+          "w"
+        ],
+        [
+          "w",
+          "w",
+          "g",
+          "w",
+          "w",
+          "x"
+        ],
+        [
+          "r",
+          "w",
+          "g",
+          "w",
+          "r",
+          "x"
+        ],
+        [
+          "r",
+          "w",
+          "x",
+          "w",
+          "r",
+          "x"
+        ]
+      ],
+      "dial_has_zero": false,
+      "tie": true,
+      "xwing": false,
+      "large": false,
+      "huge": false,
+      "sections": true
+    },
+    {
+      "id": 1,
+      "name": "TIE Fighter",
+      "canonical": "tiefighter",
+      "faction": "empire",
+      "released": true,
+      "sort_weight": true,
+      "dial": [
+        [
+          "x",
+          "x",
+          "w",
+          "x",
+          "x",
+          "x"
+        ],
+        [
+          "x",
+          "x",
+          "w",
+          "x",
+          "x",
+          "r"
+        ],
+        [
+          "w",
+          "w",
+          "g",
+          "w",
+          "w",
+          "r"
+        ],
+        [
+          "w",
+          "g",
+          "g",
+          "g",
+          "w",
+          "x"
+        ],
+        [
+          "w",
+          "x",
+          "x",
+          "x",
+          "w",
+          "x"
+        ]
+      ],
+      "dial_has_zero": false,
+      "tie": true,
+      "xwing": false,
+      "large": false,
+      "huge": false,
+      "sections": true
+    },
+    {
+      "id": 5,
+      "name": "TIE Interceptor",
+      "canonical": "tieinterceptor",
+      "faction": "empire",
+      "released": true,
+      "sort_weight": false,
+      "dial": [
+        [
+          "x",
+          "x",
+          "w",
+          "x",
+          "x",
+          "r"
+        ],
+        [
+          "x",
+          "x",
+          "g",
+          "x",
+          "x",
+          "x"
+        ],
+        [
+          "w",
+          "w",
+          "g",
+          "w",
+          "w",
+          "r"
+        ],
+        [
+          "g",
+          "g",
+          "g",
+          "g",
+          "g",
+          "x"
+        ],
+        [
+          "w",
+          "x",
+          "x",
+          "x",
+          "w",
+          "x"
+        ]
+      ],
+      "dial_has_zero": false,
+      "tie": true,
+      "xwing": false,
+      "large": false,
+      "huge": false,
+      "sections": true
+    },
+    {
+      "id": 16,
+      "name": "TIE Phantom",
+      "canonical": "tiephantom",
+      "faction": "empire",
+      "released": true,
+      "sort_weight": false,
+      "dial": [
+        [
+          "x",
+          "x",
+          "w",
+          "x",
+          "x",
+          "r"
+        ],
+        [
+          "w",
+          "w",
+          "g",
+          "w",
+          "w",
+          "r"
+        ],
+        [
+          "w",
+          "g",
+          "g",
+          "g",
+          "w",
+          "x"
+        ],
+        [
+          "w",
+          "x",
+          "x",
+          "x",
+          "w",
+          "x"
+        ]
+      ],
+      "dial_has_zero": false,
+      "tie": true,
+      "xwing": false,
+      "large": false,
+      "huge": false,
+      "sections": true
+    },
+    {
+      "id": 28,
+      "name": "TIE Punisher",
+      "canonical": "tiepunisher",
+      "faction": "empire",
+      "released": true,
+      "sort_weight": false,
+      "dial": [
+        [
+          "x",
+          "x",
+          "x",
+          "x",
+          "x",
+          "r"
+        ],
+        [
+          "w",
+          "w",
+          "w",
+          "w",
+          "w",
+          "x"
+        ],
+        [
+          "r",
+          "w",
+          "g",
+          "w",
+          "r",
+          "x"
+        ],
+        [
+          "x",
+          "g",
+          "g",
+          "g",
+          "x",
+          "x"
+        ]
+      ],
+      "dial_has_zero": false,
+      "tie": true,
+      "xwing": false,
+      "large": false,
+      "huge": false,
+      "sections": true
+    },
+    {
+      "id": 34,
+      "name": "TIE/fo Fighter",
+      "canonical": "tiefofighter",
+      "faction": "empire",
+      "released": true,
+      "sort_weight": true,
+      "dial": [
+        [
+          "x",
+          "x",
+          "w",
+          "x",
+          "x",
+          "x"
+        ],
+        [
+          "x",
+          "x",
+          "w",
+          "x",
+          "x",
+          "r"
+        ],
+        [
+          "w",
+          "w",
+          "g",
+          "w",
+          "w",
+          "x"
+        ],
+        [
+          "g",
+          "g",
+          "g",
+          "g",
+          "g",
+          "x",
+          "r",
+          "r"
+        ],
+        [
+          "w",
+          "x",
+          "x",
+          "x",
+          "w",
+          "x"
+        ]
+      ],
+      "dial_has_zero": false,
+      "tie": true,
+      "xwing": false,
+      "large": false,
+      "huge": false,
+      "sections": true
+    },
+    {
+      "id": 20,
+      "name": "VT-49 Decimator",
+      "canonical": "vt49decimator",
+      "faction": "empire",
+      "released": true,
+      "sort_weight": false,
+      "dial": [
+        [
+          "x",
+          "x",
+          "w",
+          "x",
+          "x",
+          "x"
+        ],
+        [
+          "w",
+          "w",
+          "g",
+          "w",
+          "w",
+          "x"
+        ],
+        [
+          "w",
+          "g",
+          "g",
+          "g",
+          "w",
+          "x"
+        ],
+        [
+          "x",
+          "w",
+          "w",
+          "w",
+          "x",
+          "x"
+        ]
+      ],
+      "dial_has_zero": false,
+      "tie": false,
+      "xwing": false,
+      "large": true,
+      "huge": false,
+      "sections": true
+    },
+    {
+      "id": 3,
+      "name": "X-Wing",
+      "canonical": "xwing",
+      "faction": "rebels",
+      "released": true,
+      "sort_weight": false,
+      "dial": [
+        [
+          "x",
+          "x",
+          "w",
+          "x",
+          "x",
+          "r"
+        ],
+        [
+          "w",
+          "w",
+          "w",
+          "w",
+          "w",
+          "x"
+        ],
+        [
+          "w",
+          "w",
+          "g",
+          "w",
+          "w",
+          "x"
+        ],
+        [
+          "x",
+          "g",
+          "g",
+          "g",
+          "x",
+          "x"
+        ]
+      ],
+      "dial_has_zero": false,
+      "tie": false,
+      "xwing": true,
+      "large": false,
+      "huge": false,
+      "sections": true
+    },
+    {
+      "id": 4,
+      "name": "Y-Wing",
+      "canonical": "ywing",
+      "faction": "rebels,scum",
+      "released": true,
+      "sort_weight": false,
+      "dial": [
+        [
+          "x",
+          "x",
+          "r",
+          "x",
+          "x",
+          "r"
+        ],
+        [
+          "r",
+          "w",
+          "w",
+          "w",
+          "r",
+          "x"
+        ],
+        [
+          "w",
+          "w",
+          "g",
+          "w",
+          "w",
+          "x"
+        ],
+        [
+          "x",
+          "w",
+          "g",
+          "w",
+          "x",
+          "x"
+        ]
+      ],
+      "dial_has_zero": false,
+      "tie": false,
+      "xwing": false,
+      "large": false,
+      "huge": false,
+      "sections": true
+    },
+    {
+      "id": 7,
+      "name": "YT-1300",
+      "canonical": "yt1300",
+      "faction": "rebels",
+      "released": true,
+      "sort_weight": false,
+      "dial": [
+        [
+          "x",
+          "x",
+          "w",
+          "x",
+          "x",
+          "r"
+        ],
+        [
+          "x",
+          "w",
+          "w",
+          "w",
+          "x",
+          "r"
+        ],
+        [
+          "w",
+          "w",
+          "g",
+          "w",
+          "w",
+          "x"
+        ],
+        [
+          "w",
+          "g",
+          "g",
+          "g",
+          "w",
+          "x"
+        ]
+      ],
+      "dial_has_zero": false,
+      "tie": false,
+      "xwing": false,
+      "large": true,
+      "huge": false,
+      "sections": true
+    },
+    {
+      "id": 19,
+      "name": "YT-2400 Freighter",
+      "canonical": "yt2400freighter",
+      "faction": "rebels",
+      "released": true,
+      "sort_weight": false,
+      "dial": [
+        [
+          "x",
+          "x",
+          "w",
+          "x",
+          "x",
+          "r"
+        ],
+        [
+          "w",
+          "w",
+          "w",
+          "w",
+          "w",
+          "x"
+        ],
+        [
+          "w",
+          "w",
+          "g",
+          "w",
+          "w",
+          "x"
+        ],
+        [
+          "w",
+          "g",
+          "g",
+          "g",
+          "w",
+          "x"
+        ]
+      ],
+      "dial_has_zero": false,
+      "tie": false,
+      "xwing": false,
+      "large": true,
+      "huge": false,
+      "sections": true
+    },
+    {
+      "id": 26,
+      "name": "YV-666",
+      "canonical": "yv666",
+      "faction": "scum",
+      "released": true,
+      "sort_weight": false,
+      "dial": [
+        [
+          "x",
+          "x",
+          "w",
+          "x",
+          "x",
+          "x"
+        ],
+        [
+          "w",
+          "w",
+          "g",
+          "w",
+          "w",
+          "x"
+        ],
+        [
+          "r",
+          "w",
+          "g",
+          "w",
+          "r",
+          "x"
+        ],
+        [
+          "x",
+          "g",
+          "g",
+          "g",
+          "x",
+          "x"
+        ],
+        [
+          "x",
+          "x",
+          "s",
+          "x",
+          "x",
+          "x"
+        ]
+      ],
+      "dial_has_zero": true,
+      "tie": false,
+      "xwing": false,
+      "large": true,
+      "huge": false,
+      "sections": true
+    },
+    {
+      "id": 13,
+      "name": "Z-95 Headhunter",
+      "canonical": "z95headhunter",
+      "faction": "rebels,scum",
+      "released": true,
+      "sort_weight": false,
+      "dial": [
+        [
+          "x",
+          "x",
+          "w",
+          "x",
+          "x",
+          "x"
+        ],
+        [
+          "w",
+          "w",
+          "w",
+          "w",
+          "w",
+          "r"
+        ],
+        [
+          "w",
+          "g",
+          "g",
+          "g",
+          "w",
+          "x"
+        ],
+        [
+          "x",
+          "w",
+          "g",
+          "w",
+          "x",
+          "x"
+        ]
+      ],
+      "dial_has_zero": false,
+      "tie": false,
+      "xwing": false,
+      "large": false,
+      "huge": false,
+      "sections": true
+    }
+  ]
+}
