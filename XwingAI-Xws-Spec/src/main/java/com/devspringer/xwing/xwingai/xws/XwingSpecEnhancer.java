@@ -4,10 +4,7 @@ import com.google.gson.*;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
@@ -53,7 +50,7 @@ public class XwingSpecEnhancer {
         JsonReader scumPilotsReader = new JsonReader(new FileReader("src/main/resources/scum-pilots.json"));
         JsonArray scumPilots = parser.parse(scumPilotsReader).getAsJsonArray();
 
-        // Enhance the imperial pilots.
+        // Enhance the scum pilots.
         JsonObject scumPiltosXws = pilots.getAsJsonObject("scum").getAsJsonObject("ships");
         enhanceCurrentFactionPilots(shipIdToCanonicalMap, scumPilots, scumPiltosXws);
 
@@ -99,5 +96,62 @@ public class XwingSpecEnhancer {
         if (skillElement instanceof JsonNull) return;
         String newValue = skillElement.getAsString();
         pilotToEnhance.addProperty(newPropertyName, newValue);
+    }
+
+    public void extractAllPilotAbilities(String pilotsDirectory, String outputFileName) throws IOException {
+        JsonParser parser = new JsonParser();
+        JsonArray resultArray = new JsonArray();
+
+        // Read in the rebel pilots.
+        JsonReader rebelPilotsReader = new JsonReader(new FileReader(pilotsDirectory + "rebel-pilots.json"));
+        JsonArray rebelPilots = parser.parse(rebelPilotsReader).getAsJsonArray();
+
+        extractPilotAbilities(rebelPilots, resultArray);
+
+        // Read in the imperial pilots.
+        JsonReader imperialPilotsReader = new JsonReader(new FileReader(pilotsDirectory + "imperial-pilots.json"));
+        JsonArray imperialPilots = parser.parse(imperialPilotsReader).getAsJsonArray();
+
+        extractPilotAbilities(imperialPilots, resultArray);
+
+        // Read in the scum pilots.
+        JsonReader scumPilotsReader = new JsonReader(new FileReader(pilotsDirectory + "scum-pilots.json"));
+        JsonArray scumPilots = parser.parse(scumPilotsReader).getAsJsonArray();
+
+        extractPilotAbilities(scumPilots, resultArray);
+
+        File outputFile = new File(outputFileName);
+        outputFile.createNewFile();
+
+        FileWriter writer = new FileWriter(outputFile);
+        Gson gson = new Gson();
+        String jsonResult = gson.toJson(resultArray);
+        writer.write(jsonResult);
+        writer.close();
+    }
+
+    private void extractPilotAbilities(JsonArray pilots, JsonArray mergedPilots) {
+        for (int i = 0; i < pilots.size(); i++) {
+            JsonObject currentPilot = pilots.get(i).getAsJsonObject();
+            JsonElement ability = currentPilot.get("ability");
+            if (ability != null) {
+                JsonObject newPilotElement = new JsonObject();
+                newPilotElement.addProperty("id", currentPilot.get("canonical").getAsString());
+                newPilotElement.addProperty("name", currentPilot.get("name").getAsString());
+                newPilotElement.addProperty("skill", currentPilot.get("pilot").getAsString());
+                if (!ability.isJsonNull()) {
+                    newPilotElement.addProperty("ability", ability.getAsString());
+                }
+                mergedPilots.add(newPilotElement);
+            }
+        }
+    }
+
+    public static void main(String[] args) throws IOException {
+        String pilotsDirectory = "xwingai-xws-spec/src/main/resources/";
+        XwingSpecEnhancer enhancer = new XwingSpecEnhancer();
+        String resultFile = "xwingai-xws-spec/src/main/resources/pilot-abilities.json";
+        enhancer.extractAllPilotAbilities(pilotsDirectory, resultFile);
+
     }
 }
