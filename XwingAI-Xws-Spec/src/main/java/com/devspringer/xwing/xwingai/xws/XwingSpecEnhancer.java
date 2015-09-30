@@ -9,6 +9,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
+
 /**
  * The XwingSpecEnhancer class is responsible for expanding the basic xws to include things such as pilot skill.
  */
@@ -131,6 +132,7 @@ public class XwingSpecEnhancer {
     }
 
     private void extractPilotAbilities(JsonArray pilots, JsonArray mergedPilots, String faction) {
+        Map<Integer, String> shipIdToNameMap = new HashMap<>();
         for (int i = 0; i < pilots.size(); i++) {
             JsonObject currentPilot = pilots.get(i).getAsJsonObject();
             JsonElement ability = currentPilot.get("ability");
@@ -143,9 +145,43 @@ public class XwingSpecEnhancer {
                 if (!ability.isJsonNull()) {
                     newPilotElement.addProperty("ability", ability.getAsString());
                 }
+                Integer shipId = currentPilot.get("ship_type_id").getAsInt();
+                if (shipIdToNameMap.get(shipId) != null) {
+                    newPilotElement.addProperty("shipName", shipIdToNameMap.get(shipId));
+                }
                 mergedPilots.add(newPilotElement);
+            } else if (currentPilot.get("parent") != null) {
+                String shipIdString = currentPilot.get("id").getAsString();
+                if (shipIdString.contains("_")) {
+                    Integer value = Integer.valueOf(shipIdString.split("_")[1]);
+                    shipIdToNameMap.put(value, currentPilot.get("name").getAsString());
+                }
             }
         }
+    }
+
+    public void reformatShipCards(String inputFile, String outputFile) throws IOException {
+        // Read in the XWS ships.
+        JsonParser parser = new JsonParser();
+        JsonReader pilotsReader = new JsonReader(new FileReader(inputFile));
+        JsonElement element = parser.parse(pilotsReader);
+        pilotsReader.close();
+
+        JsonArray resultArray = new JsonArray();
+
+        JsonObject rootObject = element.getAsJsonObject();
+        JsonObject ships = rootObject.get("ships").getAsJsonObject();
+        for (Map.Entry<String, JsonElement> ship : ships.entrySet()) {
+            JsonObject shipObject = ship.getValue().getAsJsonObject();
+            shipObject.addProperty("id", shipObject.get("name").getAsString());
+            resultArray.add(shipObject);
+        }
+
+        FileWriter writer = new FileWriter(outputFile);
+        Gson gson = new Gson();
+        String jsonResult = gson.toJson(resultArray);
+        writer.write(jsonResult);
+        writer.close();
     }
 
     public static void main(String[] args) throws IOException {
@@ -154,5 +190,9 @@ public class XwingSpecEnhancer {
         String resultFile = "xwingai-xws-spec/src/main/resources/pilot-abilities.json";
         enhancer.extractAllPilotAbilities(pilotsDirectory, resultFile);
 
+        // Modify the format of the ships
+        String shipCardsFile = "xwingai-xws-spec/src/main/resources/xws-ships-cards.json";
+        String resultShipsFile = "xwingai-xws-spec/src/main/resources/ships-final.json";
+        enhancer.reformatShipCards(shipCardsFile, resultShipsFile);
     }
 }

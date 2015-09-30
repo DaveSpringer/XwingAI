@@ -1,10 +1,11 @@
-package com.devspringer.xwing.xwingai.common;
+package com.devspringer.xwing.xwingai.common.dto;
 
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 
 import java.io.Serializable;
 import java.util.Arrays;
+import java.util.List;
 
 /**
  * The Ship class describes a ship in X-Wing.
@@ -19,9 +20,9 @@ public class Ship implements Serializable {
     private String hull;
     private String shields;
     private String[] actions;
-    private Integer[][] maneuvers;
+    private List<List<Integer>> maneuvers;
 
-    public Ship(String id, String name, String attack, String agility, String hull, String shields, String[] actions, Integer[][] maneuvers) {
+    public Ship(String id, String name, String attack, String agility, String hull, String shields, String[] actions, List<List<Integer>> maneuvers) {
         this.id = id;
         this.name = name;
         this.attack = attack;
@@ -136,14 +137,14 @@ public class Ship implements Serializable {
     /**
      * @return The maneuvers as a Integer[]
      */
-    public Integer[][] getManeuvers() {
+    public List<List<Integer>> getManeuvers() {
         return maneuvers;
     }
 
     /**
      * @param maneuvers The maneuvers to set in Integer[] format
      */
-    public void setManeuvers(Integer[][] maneuvers) {
+    public void setManeuvers(List<List<Integer>> maneuvers) {
         this.maneuvers = maneuvers;
     }
 
@@ -191,7 +192,7 @@ public class Ship implements Serializable {
                 ", hull='" + hull + '\'' +
                 ", shields='" + shields + '\'' +
                 ", actions=" + Arrays.toString(actions) +
-                ", maneuvers=" + Arrays.toString(maneuvers) +
+                ", maneuvers=" + maneuvers +
                 '}';
     }
 }

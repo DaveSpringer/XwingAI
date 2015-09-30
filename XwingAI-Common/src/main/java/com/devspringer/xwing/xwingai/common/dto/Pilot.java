@@ -1,4 +1,4 @@
-package com.devspringer.xwing.xwingai.common;
+package com.devspringer.xwing.xwingai.common.dto;
 
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
@@ -16,15 +16,17 @@ public class Pilot implements Serializable{
     private String faction;
     private String skill;
     private String ability;
+    private String shipName;
     private Ship ship;
 
 
-    public Pilot(String id, String name, String faction, String skill, String ability, Ship ship) {
+    public Pilot(String id, String name, String faction, String skill, String ability, String shipName, Ship ship) {
         this.id = id;
         this.name = name;
         this.faction = faction;
         this.skill = skill;
         this.ability = ability;
+        this.shipName = shipName;
         this.ship = ship;
     }
 
@@ -88,6 +90,20 @@ public class Pilot implements Serializable{
     }
 
     /**
+     * @return The shipName as a String
+     */
+    public String getShipName() {
+        return shipName;
+    }
+
+    /**
+     * @param shipName The shipName to set in String format
+     */
+    public void setShipName(String shipName) {
+        this.shipName = shipName;
+    }
+
+    /**
      * @return The ability as a String
      */
     public String getAbility() {
@@ -129,6 +145,7 @@ public class Pilot implements Serializable{
                 .append(faction, pilot.faction)
                 .append(skill, pilot.skill)
                 .append(ability, pilot.ability)
+                .append(shipName, pilot.shipName)
                 .append(ship, pilot.ship)
                 .isEquals();
     }
@@ -141,6 +158,7 @@ public class Pilot implements Serializable{
                 .append(faction)
                 .append(skill)
                 .append(ability)
+                .append(shipName)
                 .append(ship)
                 .toHashCode();
     }
@@ -153,6 +171,7 @@ public class Pilot implements Serializable{
                 ", faction='" + faction + '\'' +
                 ", skill='" + skill + '\'' +
                 ", ability='" + ability + '\'' +
+                ", shipName=" + shipName +
                 ", ship=" + ship +
                 '}';
     }
